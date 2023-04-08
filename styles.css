@@ -269,8 +269,8 @@
 }
 
 #mainImg {
-    height: 425px;
-    width: 400px;
+    height: 350px;
+    width: auto;
     background: #cfcfc4;
     border-radius: 20px;
 }
@@ -354,6 +354,15 @@
     padding-right: 50px;
     padding-left: 50px;
 }
+.title {
+    margin: 20rem 2rem 0 2rem;
+}
+
+.title h1{
+    font-size: 3.5rem;
+    color: #1e2330;
+    text-align: left;
+}
 
 .lbBtn{
     height: 50px;
@@ -404,7 +413,7 @@
 }
 
 .Lbs img {
-    height: 400px;
+    height: auto;
     width: 25%;
     background: #fff;
 }
@@ -414,6 +423,7 @@
     font-size: 0.7rem;
     padding: 8px;
     width: 48%;
+    min-width: 400px;
 }
 
 table {
@@ -460,17 +470,23 @@ tr:hover {
     
     .lbBtn{
         width: 100%;
+        min-width: 475px;
     }
 
     .year{
         width: 100%;
         text-align: center;
+        min-width: 475px;
     }
 
     .Lbs {
         display: block;
         margin-top: 10rem;
         
+    }
+
+    .title h1{
+        text-align: center;
     }
 
     .Lbs img {
@@ -494,7 +510,7 @@ tr:hover {
 /* Footer Section */
 .footerContainer {
     background-color: #ffffee;
-    padding: 20rem 0 3rem 0;
+    padding: 32.5rem 0 3rem 0;
     text-align: center;
 }
 
@@ -508,7 +524,105 @@ tr:hover {
 @media screen and (max-width: 864px) {
     .footerContainer {
         background-color: #ffffee;
-        padding: 110rem 0 3rem 0;
+        padding: 125rem 0 3rem 0;
         text-align: center;
     }
+}
+
+/* Signup CSS */
+.wrapper {
+    width: 300px;
+    padding: 2rem 1rem;
+    margin: 150px auto;
+    background-color: #cfcfc4;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+}
+
+.wrapper h1 {
+    font-size: 2rem;
+    color: #af0034;
+    margin-bottom: 1.2rem;
+}
+
+.wrapper form input{
+    width: 92%;
+    outline: none;
+    border: 1px solid #FFF;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #ffffee;
+}
+
+.wrapper button{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 90%;
+    cursor: pointer;
+    background: #4cb5ff;
+}
+
+.wrapper button a{
+        color: #1e2330;
+        text-decoration: none;
+}
+
+.wrapper button:hover{
+    background: #ff232bde;
+    transition: all 0.3s ease;
+}
+
+.wrapper button a:hover{
+    color: #FFF;
+    transition: all 0.3s ease;
+}
+
+.wrapper input:focus{
+    border: 2px solid #FFF;
+}
+
+.terms {
+    margin-top: 0.2rem;
+}
+
+.terms input{
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.terms a{
+    color:rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.member{
+    font-size: 1rem;
+    margin-top: 1.4rem;
+    color: #1e2330;
+}
+
+.member a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+;}
+
+/* Login CSS */
+.recover {
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a{
+    text-decoration: none;
+    color: #1e2330a6;
 }

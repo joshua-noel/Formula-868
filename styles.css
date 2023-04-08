@@ -67,6 +67,7 @@
     text-decoration: none;
     padding: 0 1rem;
     width: 100%;
+    border-radius: 20px;
 }
 
 .button {
@@ -81,7 +82,7 @@
     width: 100%;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .button:hover {
@@ -232,7 +233,7 @@
     padding: 14px 32px;
     background: #cfcfc4;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -256,7 +257,7 @@
     height: 100%;
     background: #ff232b;
     transition: all 0.35s;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .mainBtn:hover:after{
@@ -436,7 +437,7 @@ thead, th{
     background-color: #4cb5ff;
     color: #FFF;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 td {
@@ -490,7 +491,7 @@ tr:hover {
     }
 
     .Lbs img {
-        height: 400px;
+        height: auto;
         width: 80%;
         background: #fff;
         display:block;
@@ -524,7 +525,7 @@ tr:hover {
 @media screen and (max-width: 864px) {
     .footerContainer {
         background-color: #ffffee;
-        padding: 125rem 0 3rem 0;
+        padding: 155rem 0 3rem 0;
         text-align: center;
     }
 }
@@ -537,11 +538,10 @@ tr:hover {
     background-color: #cfcfc4;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
-    border: 2px solid #fff;
 }
 
 .wrapper h1 {
+    font-weight: bolder;
     font-size: 2rem;
     color: #af0034;
     margin-bottom: 1.2rem;
@@ -561,7 +561,7 @@ tr:hover {
     font-size: 1rem;
     margin-top: 1.8rem;
     padding: 10px 0;
-    border-radius: 5px;
+    border-radius: 20px;
     outline: none;
     border: none;
     width: 90%;

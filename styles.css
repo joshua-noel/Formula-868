@@ -405,7 +405,7 @@
 
 .Lbs img {
     height: 400px;
-    width: 350px;
+    width: 25%;
     background: #fff;
 }
 
@@ -413,10 +413,11 @@
     background-color: #fff;
     font-size: 0.7rem;
     padding: 8px;
-    border: 1px solid #cfcfc4;
+    width: 48%;
 }
 
 table {
+    
     border-collapse: collapse;
 }
 
@@ -440,12 +441,60 @@ tr:nth-child(even){
 
 tr:hover {
     background-color: #af0034;
+    color:#ffffee;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 864px) {
+    
+    .lbContainer {
+        display: block;
+        margin-top: 10rem;
+        
+    }
+    
+    .lbMenu{
+        display: block;
+        
+    }
+    
+    .lbBtn{
+        width: 100%;
+    }
+
+    .year{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Lbs {
+        display: block;
+        margin-top: 10rem;
+        
+    }
+
+    .Lbs img {
+        height: 400px;
+        width: 80%;
+        background: #fff;
+        display:block;
+        margin: 2.5rem auto;
+    }
+    .card{
+        width:55%;
+    }
+    table {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Footer Section */
 .footerContainer {
     background-color: #ffffee;
-    padding: 20rem 0 5rem 0;
+    padding: 20rem 0 3rem 0;
     text-align: center;
 }
 
@@ -453,4 +502,13 @@ tr:hover {
     font-weight: bold;
     font-style: italic;
     color: #1e2330;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 864px) {
+    .footerContainer {
+        background-color: #ffffee;
+        padding: 110rem 0 3rem 0;
+        text-align: center;
+    }
 }

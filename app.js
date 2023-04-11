@@ -10,19 +10,22 @@ menu.addEventListener('click', function () {
 function drawTable(driverArr) {
     let table = document.querySelector("tbody#results");
 
-    for (let driver of driverArr) {
-        let row = document.createElement("tr");
-        let driver_cell = document.createElement("td");
-        driver_cell.innerText = `${driver.Driver.givenName} ${driver.Driver.familyName}`;
-        let company_cell = document.createElement("td");
-        company_cell.innerText = `${driver.Constructors[0].name}`;
-        let points_cell = document.createElement("td");
-        points_cell.innerText = `${driver.points}`;
+    for (let i = 0; i < 10; i++) { // Loop through the first 10 items only
+        let driver = driverArr[i];
+        if (driver) { // Check if the driver exists in the array
+            let row = document.createElement("tr");
+            let driver_cell = document.createElement("td");
+            driver_cell.innerText = `${driver.Driver.givenName} ${driver.Driver.familyName}`;
+            let company_cell = document.createElement("td");
+            company_cell.innerText = `${driver.Constructors[0].name}`;
+            let points_cell = document.createElement("td");
+            points_cell.innerText = `${driver.points}`;
 
-        row.appendChild(driver_cell);
-        row.appendChild(company_cell);
-        row.appendChild(points_cell);
-        table.appendChild(row);
+            row.appendChild(driver_cell);
+            row.appendChild(company_cell);
+            row.appendChild(points_cell);
+            table.appendChild(row);
+        }
     }
 }
 

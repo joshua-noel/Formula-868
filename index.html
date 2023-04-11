@@ -79,56 +79,7 @@
                         </tr>
                     </thead>
                     <tbody id="results">
-                        <tr>
-                            <td>Lewis HAMILITON</td>
-                            <td>Mercedes AMG</td>
-                            <td>235</td>
-                        <tr>
-                        <tr>
-                            <td>Max VERSTAPPEN</td>
-                            <td>Redbull Racing</td>
-                            <td>200</td>
-                        <tr>
-                        <tr>
-                            <td>Charles LECLERC</td>
-                            <td>Ferrari</td>
-                            <td>195</td>
-                        <tr>
-                            <tr>
-                                <td>Charles LECLERC</td>
-                                <td>Ferrari</td>
-                                <td>195</td>
-                            <tr>
-                                <tr>
-                            <td>Charles LECLERC</td>
-                            <td>Ferrari</td>
-                            <td>195</td>
-                        <tr>
-                            <tr>
-                                <td>Lewis HAMILITON</td>
-                                <td>Mercedes AMG</td>
-                                <td>235</td>
-                            <tr>
-                            <tr>
-                                <td>Max VERSTAPPEN</td>
-                                <td>Redbull Racing</td>
-                                <td>200</td>
-                            <tr>
-                            <tr>
-                                <td>Charles LECLERC</td>
-                                <td>Ferrari</td>
-                                <td>195</td>
-                            <tr>
-                                <tr>
-                                    <td>Charles LECLERC</td>
-                                    <td>Ferrari</td>
-                                    <td>195</td>
-                                <tr>
-                                    <tr>
-                                <td>Charles LECLERC</td>
-                                <td>Ferrari</td>
-                                <td>195</td>
-                            <tr>
+
                     </tbody>
                 </table>
                 <img src="images/test2.png" alt="1st place/random Driver" id="secondPlace">
@@ -142,29 +93,6 @@
     </div>
 
     <script src="app.js">
-        function drawTable(records){
-        let result = document.querySelector('#result');
-        
-        let html='';
-
-        for(let rec of records){
-            html=+ `<tr>
-                    <td>${driver.Driver.givenName} ${driver.Driver.familyName}</td>
-                    <td>${driver.Constructors[0].name}</td>
-                    <td>${driver.points}</td>
-                <\tr>`;
-        }
-
-        result.innerHTML = html;
-        }
-
-        async function getData(){
-            const response = await fetch('https://ergast.com/api/f1/current/driverStandings.json');
-            const data = await response.json();
-            drawTable(data.MRData.StandingsTable.StandingsLists[0].DriverStandings.slice(0, 10)); 
-        }
-
-        getData();
     </script>
 </body>
 </html>

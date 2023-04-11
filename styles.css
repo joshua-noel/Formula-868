@@ -190,7 +190,15 @@
 
 /* Hero Section */
 .main {
-    background-color: #ffffee;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Formula-1-Images.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.title {
+    margin-top: 10rem;
 }
 
 .mainContainer {
@@ -199,7 +207,8 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    background-color: #ffffee;
+    background-color: rgba(127,127,127, 0.1);
+    backdrop-filter: blur(10px);
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -208,15 +217,19 @@
 
 .mainContent {
     width: 100%;
+    padding: 20px;
+    margin-bottom: 3rem;
 }
 
 .mainContent h1 {
     font-size: 3.5rem;
     color: #1e2330;
+    filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.4)); 
 }
 
 .textHighlight {
     color: #af0034;
+    filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.4));
 }
 
 .mainContent p {
@@ -268,8 +281,8 @@
 }
 
 #mainImg {
-    height: 425px;
-    width: 400px;
+    height: 300px;
+    width: auto;
     background: #cfcfc4;
     border-radius: 20px;
 }
@@ -335,6 +348,7 @@
     align-items: center;
     width: 100%;
     max-width: 1300px;
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     padding-right: 100px 50px;
@@ -396,6 +410,7 @@
     max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 5rem;
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -502,6 +517,7 @@ footer {
     font-style: italic;
     color: #1e2330;
 }
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 864px) {

@@ -13,6 +13,7 @@ async function renderCurrentStanding() { //working
     driverArr = json.MRData.StandingsTable.StandingsLists[0].DriverStandings;
 
     let table = document.querySelector("tbody#results");
+    table.innerHTML = ""; //clears table
 
     for (let driver of driverArr) {
         let row = document.createElement("tr");
@@ -30,13 +31,17 @@ async function renderCurrentStanding() { //working
     }
 }
 
-async function renderStandingByYear(year) { //working
+async function renderStandingByYear() { //working
+    let year = document.querySelector("select#yearSelected").value;
+
     const url = "http://ergast.com/api/f1/" + year + "/driverStandings.json";
     const response = await fetch(url);
     const json = await response.json();
+    console.log(json);
     driverArr = json.MRData.StandingsTable.StandingsLists[0].DriverStandings;
 
     let table = document.querySelector("tbody#results");
+    table.innerHTML = ""; //clears table
 
     for (let driver of driverArr) {
         let row = document.createElement("tr");
@@ -62,6 +67,7 @@ async function renderMostRecentRaceStanding() { //working??
     
     //render points table
     let table = document.querySelector("tbody#results");
+    table.innerHTML = ""; //clears table
 
     for (let driver of driverArr) {
         let row = document.createElement("tr");
@@ -80,6 +86,7 @@ async function renderMostRecentRaceStanding() { //working??
 
     //render circut name
     let target = document.querySelector("div#circuit-info");
+    target.innerHTML = ""; //clears data
     let circuitInfo = document.createElement("h1");
     circuitInfo.innerText = `${circut.circuitName} in ${circut.Location.locality}, ${circut.Location.country}`
     target.appendChild(circuitInfo);

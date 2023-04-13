@@ -506,15 +506,12 @@ tr:hover {
     }
 
     .card {
-        width: 55%;
-    }
-
-    table {
         width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 /* Footer Section */
@@ -537,5 +534,32 @@ footer {
         background-color: #ffffee;
         padding: 110rem 0 3rem 0;
         text-align: center;
+    }
+}
+
+/* Race Section */
+.raceImgContainer{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+.raceImg {
+    width: 33%;
+    height: auto;
+}
+
+.raceCard {
+    background-color: #fff;
+    font-size: 0.7rem;
+    padding: 8px;
+    width: 100%;
+}
+
+@media screen and (max-width: 864px) {
+    .raceImgContainer{
+        display: none;
+
     }
 }

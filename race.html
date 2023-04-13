@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 868</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="index.html" id="navbarLogo">Formula 868</a>
+            <div class="navbarToggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="index.html" class="navbarLinks">Home</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="#explore" class="navbarLinks">Explore</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="#lb" class="navbarLinks">Leaderboards</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Leaderboard Section -->
+    <div class="lb" id="lb">
+        <div class="lbContainer">
+            <h2>Race Leaderboard</h2>
+            <div id="circuit-info"> 
+            </div>
+            <div class="lbMenu">
+                <button class="lbBtn"><a href="index.html">View Season Standings</a></button>
+                <select class="year" id="yearSelected">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                </select>  
+            
+                <button class="lbBtn" onclick="renderMostRecentRaceStanding()"><a href="#">View Most Recent Race Results</a></button>
+            </div>
+            <div class="raceImgContainer">
+                <img class="raceImg" src="images/sergio-perez.jpg" alt="2nd place/random Driver" id="secondPlace">
+                <img class="raceImg" src="images/max-verstappen.jpg" alt="1st place/random Driver" id="firstPlace">
+                <img class="raceImg" src="images/fernando-alonso.jpg" alt="3rd place/random Driver" id="thirdPlace">
+            </div>
+            <div class="Lbs">
+                <table class="raceCard">
+                    <thead>
+                        <tr>
+                            <th>Driver</th>
+                            <th>Constructor</th>
+                            <th>Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <p class="websiteRights">Formula 868 2023. All rights reserved</p>
+    </footer>
+
+    <script src="app.js">
+    </script>
+</body>
+
+</html>

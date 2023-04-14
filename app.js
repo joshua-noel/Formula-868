@@ -1,6 +1,5 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbarMenu');
-const url = "https://ergast.com/api/f1/${year}/driverStandings.json"; //appends .json to format response as jsom instead of xml
 
 menu.addEventListener('click', function () {
     menu.classList.toggle('is-active');
@@ -34,7 +33,7 @@ async function renderCurrentStanding() { //working
 async function renderStandingByYear() { //working
     let year = document.querySelector("select#yearSelected").value;
 
-    const url = "http://ergast.com/api/f1/" + year + "/driverStandings.json";
+    const url = "https://ergast.com/api/f1/" + year + "/driverStandings.json";
     const response = await fetch(url);
     const json = await response.json();
     console.log(json);

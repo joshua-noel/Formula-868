@@ -76,7 +76,7 @@ async function renderMostRecentRaceStanding() { //working??
         let company_cell = document.createElement("td");
         company_cell.innerText = `${driver.Constructor.name}`;
         let points_cell = document.createElement("td");
-        points_cell.innerText = `${driver.points}`;
+        points_cell.innerText = `${driver.Time.time}`;
 
         row.appendChild(driver_cell);
         row.appendChild(company_cell);

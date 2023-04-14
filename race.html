@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="renderMostRecentRaceStanding()">
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="navbarContainer">
@@ -43,7 +43,7 @@
             <div id="circuit-info"> 
             </div>
             <div class="lbMenu">
-                <button class="lbBtn"><a href="index.html">View Season Standings</a></button>
+                <button class="lbBtn" onclick="renderStandingByYear()"><a href="./index.html">View Season Standings</a></button>
                 <select class="year" id="yearSelected">
                     <option value="2023">2023</option>
                     <option value="2022">2022</option>

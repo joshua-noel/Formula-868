@@ -1,6 +1,6 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbarMenu');
-const url = "http://ergast.com/api/f1/${year}/driverStandings.json"; //appends .json to format response as jsom instead of xml
+const url = "https://ergast.com/api/f1/${year}/driverStandings.json"; //appends .json to format response as jsom instead of xml
 
 menu.addEventListener('click', function () {
     menu.classList.toggle('is-active');
@@ -8,7 +8,7 @@ menu.addEventListener('click', function () {
 })
 
 async function renderCurrentStanding() { //working
-    const response = await fetch ("http://ergast.com/api/f1/current/driverStandings.json")
+    const response = await fetch ("https://ergast.com/api/f1/current/driverStandings.json")
     const json = await response.json();
     driverArr = json.MRData.StandingsTable.StandingsLists[0].DriverStandings;
 
@@ -60,7 +60,7 @@ async function renderStandingByYear() { //working
 }
 
 async function renderMostRecentRaceStanding() { //working??
-    const response = await fetch("http://ergast.com/api/f1/current/last/results.json");
+    const response = await fetch("https://ergast.com/api/f1/current/last/results.json");
     const json = await response.json();
     driverArr = json.MRData.RaceTable.Races[0].Results;
     circut = json.MRData.RaceTable.Races[0].Circuit;
